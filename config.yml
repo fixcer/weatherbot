@@ -1,0 +1,22 @@
+language: vi
+pipeline:
+- name: whitespace_tokenizer_vi.VietnameseTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  batch_strategy: sequence # Các intent mất cân bằng
+- name: EntitySynonymMapper
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  epochs: 200
+- name: MappingPolicy
+- name: FallbackPolicy
+  nlu_threshold: 0.6
+  core_threshold: 0.3
+  fallback_action_name: utter_fallback

@@ -1,0 +1,60 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- start
+- goodbye
+- thankyou
+- praise
+- decry
+- ask_ability
+- ask_forecast_weather
+- set_name
+- set_location
+- ask_forecast_weather+set_location
+entities:
+- location
+- name
+slots:
+  location:
+    type: text
+  name:
+    type: unfeaturized
+    initial_value: Khách
+responses:
+  utter_ask_name:
+  - text: Bạn tên là gì?
+  - text: Tên bạn là gì vậy?
+  - text: Tôi gọi bạn là gì được nhỉ?
+  - text: Người ta hay gọi bạn là gì?
+  utter_ask_location:
+  - text: Bạn muốn hỏi ở địa điểm nào?
+  - text: Thời tiết ở đâu nhỉ?
+  utter_greet:
+  - text: Chào, {name}. Tôi là chatbot được thiết kế để giúp bạn xem thông tin thời
+      tiết ^^
+  utter_goodbye:
+  - image: https://benative.vn/uploads/tin-tuc/2018_05/tu-hoc-tieng-anh-giao-tiep.png
+    text: Hẹn gặp lại bạn nhé ^^
+  utter_happy:
+  - text: Ahihi, ngại quá!
+  utter_sorry:
+  - text: Tôi xin lỗi bởi vì tôi chưa đủ thông minh =(((
+  utter_noworries:
+  - text: Đó là việc mà tôi nên làm mà, có gì đâu mà cảm ơn ^^
+  utter_show_ability:
+  - text: Tôi có thể nói chuyện với bạn và đưa cho bạn thông tin về thời tiết!
+  utter_fallback:
+  - text: "Tôi xin lỗi, Tôi không hiểu bạn muốn gì.\nBạn có thể nhắc lại được không\
+      \ ạ?"
+actions:
+- utter_greet
+- utter_happy
+- utter_goodbye
+- utter_sorry
+- utter_noworries
+- utter_show_ability
+- utter_fallback
+- action_weather
+- utter_ask_name
+- utter_ask_location

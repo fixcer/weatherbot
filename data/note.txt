@@ -1,0 +1,2 @@
+Nếu cung cấp entities rồi mà cung cấp lại thì sao
+Tích hợp các module do mình tự phát triển
