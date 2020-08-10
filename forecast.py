@@ -46,7 +46,7 @@ def getWeather(city_id):
 					tmp = description[i].text.split('.')
 					res = tmp[0] + tmp[2] + ".\n" + tmp[3] + ", nhiệt độ " + temperature[i//2][1] + "C - " + \
                             		temperature[i//2][0] + "C.\n" + "Chỉ số UV " + \
-                    		        UV[i].text + ", độ ẩm " + humidity[i].text[5:]
+                    		        UV[i].text + ", độ ẩm " + humidity[i].text[5:] + "\n"
 					details.append(res)
 
 			return details

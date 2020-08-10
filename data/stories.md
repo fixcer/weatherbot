@@ -37,4 +37,11 @@
 ## ask_forecast_weather+set_location
 * ask_forecast_weather+set_location
   - action_weather
-  
+
+## ask_forecast_weather+set_day
+* ask_forecast_weather+set_day
+  - utter_ask_location
+
+## ask_forecast_weather+set_location+set_day
+* ask_forecast_weather+set_location+set_day
+  - action_weather

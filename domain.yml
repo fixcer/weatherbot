@@ -10,12 +10,18 @@ intents:
 - ask_ability
 - ask_forecast_weather
 - set_name
+- set_day
 - set_location
 - ask_forecast_weather+set_location
+- ask_forecast_weather+set_location+set_day
+- ask_forecast_weather+set_day
 entities:
 - location
 - name
+- day
 slots:
+  day:
+    type: text
   location:
     type: text
   name:

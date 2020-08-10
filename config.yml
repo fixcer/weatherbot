@@ -9,7 +9,7 @@ pipeline:
   max_ngram: 4
 - name: DIETClassifier
   epochs: 100
-  batch_strategy: sequence # Các intent mất cân bằng
+  batch_strategy: sequence
 - name: EntitySynonymMapper
 policies:
 - name: MemoizationPolicy
@@ -17,6 +17,6 @@ policies:
   epochs: 200
 - name: MappingPolicy
 - name: FallbackPolicy
-  nlu_threshold: 0.6
-  core_threshold: 0.3
+  nlu_threshold: 0.4
+  core_threshold: 0.2
   fallback_action_name: utter_fallback

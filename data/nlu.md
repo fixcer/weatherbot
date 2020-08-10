@@ -30,14 +30,12 @@
 - Bye
 - Tạm biệt
 - Hẹn gặp lại
-- Biến đi
 - Gặp sau
 - Nói chuyện sau nhé
 - Tớ sẽ quay trở lại
 - Thân ái
 - Cho lui
 - Bãi triều
-- tạm biệt
 
 ## intent:thankyou
 - Thank you
@@ -50,8 +48,6 @@
 - Làm tốt lắm
 - Cảm ơn nhiều
 - Tốt lắm
-- cảm ơn nhiều
-- làm tốt lắm
 
 ## intent:praise
 - Cool
@@ -63,9 +59,7 @@
 - Tuyệt vời
 - Xuất sắc
 - Giỏi lắm
-- giỏi quá
-- giỏi lắm
-- tuyệt vời
+- Giỏi quá
 
 ## intent:decry
 - Tệ quá
@@ -75,8 +69,8 @@
 - Bot ngu quá
 - Bot chưa thông minh
 - Bot cần cải thiện
-- khen đểu á
-- tệ thật
+- Khen đểu á
+- Tệ thật
 
 ## intent:ask_ability
 - Có chức năng gì
@@ -84,8 +78,8 @@
 - Khả năng của bạn là gì
 - Bot có thể làm gì
 - Chức năng của bạn là gì
-- bạn có thể làm gì
-- em có thể làm gì nữa
+- Bạn có thể làm gì
+- Em có thể làm gì nữa
 
 ## intent:set_name
 - Tên tôi là [Hương](name)
@@ -107,18 +101,20 @@
 - tôi là [Toàn](name)
 - Gọi tôi là [Toàn](name)
 - Minhf laf [Linh](name)
+- Mình là [Toàn](name)
+- gọi t là [Linh](name)
+- Toan nhé
 
 ## intent:ask_forecast_weather
-- Có ai để ý thời tiết hôm nay không?
-- Những con đường hôm nay có bị ngập không?
+- Có ai để ý thời tiết không?
+- Những con đường có bị ngập không?
 - Thời tiết thật khủng khiếp
-- Bạn có biết dự báo thời tiết cho ngày hôm nay?
+- Bạn có biết dự báo thời tiết?
 - Tôi có cần phải mang theo một chiếc ô?
-- Thời tiết hôm nay thế nào?
-- Hôm nay trời lạnh đến mức nào?
-- Ngày mai trời sẽ lạnh đến mức nào?
-- Hôm nay trời nóng đến mức nào?
-- Ngày mai trời nóng đến mức nào?
+- Thời tiết thế nào?
+- Trời lạnh đến mức nào?
+- Trời sẽ lạnh đến mức nào?
+- Trời nóng đến mức nào?
 - Làm thế nào có được độ ẩm?
 - Độ ẩm như thế nào?
 - Trời mưa bao lâu?
@@ -126,10 +122,10 @@
 - Thời tiết thế nào
 - Sẽ có cơn bão
 - Tin về áp thấp nhiệt đới
-- Mưa giông ngày hôm nay?
+- Mưa giông?
 - Ngập lụt ở đâu?
-- Thời tiết hôm nay sẽ như thế nào?
-- Nói cho tôi biết, thời tiết hôm nay như thế nào?
+- Thời tiết sẽ như thế nào?
+- Nói cho tôi biết, thời tiết như thế nào?
 - Thời tiết khủng khiếp
 - Thời tiết trông thế nào
 - Mức độ ẩm ngay bây giờ
@@ -137,8 +133,8 @@
 - Nhiệt độ hiện tại
 - Thời tiết dự kiến thế nào
 - Dự báo thời tiết nói gì
-- Dự báo thời tiết hôm nay là gì
-- Gió hôm nay thế nào
+- Dự báo thời tiết là gì
+- Gió thế nào
 - Gió thổi ra sao
 - Gió mạnh hay nhẹ
 - Trời có râm không
@@ -150,16 +146,34 @@
 - Nay nắng to không
 - Có bão phải không
 
+## intent:set_day
+- [Hôm nay](day)
+- [Bây giờ](day)
+- [Lúc này](day)
+- [Ngay bây giờ](day)
+- [Ngay lúc này](day)
+- [Hiện tại](day)
+- [Ngày mai](day)
+- [Hôm sau](day)
+- [Ngày kia](day)
+- [Ngày kìa](day)
+- [3 ngày sau](day)
+- [4 ngày sau](day)
+- [5 hôm sau](day)
+- [6 hôm nữa](day)
+- [7 hôm sau](day)
+- [8 ngày nữa](day)
+- thời tiết [5 ngày sau](day)
+
 ## intent:set_location
-- Ở [HN]{"entity": "location", "value": "Hà Nội"}
-- Ở [HCM]{"entity": "location", "value": "Hồ Chí Minh"}
-- Ở [Sài Gòn]{"entity": "location", "value": "Hồ Chí Minh"}
-- Ở [HP]{"entity": "location", "value": "Hải Phòng"}
-- Ở [HL]{"entity": "location", "value": "Hạ Long"}
+- Ở [HN]{"entity": "location", "value": "H\u00e0 N\u1ed9i"}
+- Ở [HCM]{"entity": "location", "value": "H\u1ed3 Ch\u00ed Minh"}
+- Ở [Sài Gòn]{"entity": "location", "value": "H\u1ed3 Ch\u00ed Minh"}
+- Ở [HP]{"entity": "location", "value": "H\u1ea3i Ph\u00f2ng"}
+- Ở [HL]{"entity": "location", "value": "H\u1ea1 Long"}
 - Ở [Hà Nội](location)
 - Ở [Hồ Chí Minh](location)
 - Ở [Hải Phòng](location)
-- Ở [Hà Nội](location)
 - Tại [Hạ Long](location)
 - Tôi sống ở [Huế](location)
 - [Hồ Chí Minh](location)
@@ -188,6 +202,41 @@
 - Thời tiết [Hồ chí Minh](location)
 - thời tiết [Hà Nội](location)
 - Nhiệt độ tại [Hồ Chí Minh](location)
+- thời tiết ở [Huế](location)
+- thời tiết ở [Hạ Long](location)
+
+## intent:ask_forecast_weather+set_day
+- thời tiết [hôm nay](day) thế nào
+- thời tiết [ngày mai](day) ra sao
+- [hôm nay](day) trời mưa không
+- thời tiết [ngày kia](day)
+- [ngày mai](day) trời như thế nào
+- nhiệt độ [ngày kia](day)
+- Dự báo thời tiết [ngày mai](day)
+- nhiệt độ bây giờ
+- thời tiết [hiện tại](day)
+- thời tiết [ngày mai](day)
+
+## intent:ask_forecast_weather+set_location+set_day
+- thời tiết [ngày mai](day) ở [hà nội](location) thế nào
+- thời tiết [HCM]{"entity": "location", "value": "H\u1ed3 Ch\u00ed Minh"} [ngày kia](day) ra sao
+- nhiệt độ [ngày mai](day) tại [Huế](location)
+- thời tiết [Hà Nội](location) [ngày mai](day)
+- thời tiêt [HL]{"entity": "location", "value": "H\u1ea1 Long"} [ngày kia](day)
+- thời tiết [HN]{"entity": "location", "value": "H\u00e0 N\u1ed9i"} [4 ngày nữa](day)
+
+## synonym:Hà Nội
+- HN
+
+## synonym:Hạ Long
+- HL
+
+## synonym:Hải Phòng
+- HP
+
+## synonym:Hồ Chí Minh
+- HCM
+- Sài Gòn
 
 ## lookup:location.txt
   data/test/lookup_tables/location.txt
