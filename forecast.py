@@ -6,6 +6,7 @@ from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
 
+
 with open("city.json", "r") as read_file:
 	data = json.load(read_file)
 
@@ -52,3 +53,11 @@ def getWeather(city_id):
 			return details
 	except:
 		return "Vị trí này ngoài phạm vi của tôi rồi"
+
+
+def getLocation():
+	ip = get('https://ident.me').text
+	URL = "http://ip-api.com/json/" + ip
+	res = requests.get(URL).json()
+
+	return res['city']

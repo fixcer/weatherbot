@@ -2,9 +2,10 @@ import json
 
 from typing import Dict, Text, Any, List, Union, Optional
 from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, AllSlotsReset
 from rasa_sdk.executor import CollectingDispatcher
 from unidecode import unidecode
+from datetime import date, timedelta 
 
 class ActionWeather(Action):
 
@@ -42,12 +43,16 @@ class ActionWeather(Action):
 					if isinstance(day, str):
 						dispatcher.utter_message("Tôi không thể nhận diện được ngày bạn muốn xem")
 					else:
-						dispatcher.utter_message(res[day])
+						today = str(date.today() + timedelta(days=day))
+						res = "Dự báo thời tiết " + loc + " " + today + "\n" + res[day]
+						dispatcher.utter_message(res)
 				else:
-					dispatcher.utter_message(res[0])
+					today = str(date.today())
+					res = "Dự báo thời tiết " + loc + " " + today + "\n" + res[0]
+					dispatcher.utter_message(res)
 			else:
 				dispatcher.utter_message("Vị trí này ngoài phạm vi của tôi rồi, tiếc quá")
 		else:
-			dispatcher.utter_message("Mời bạn nhập lại vị trí")
+			dispatcher.utter_message(template="utter_ask_location")
 		
-		return []
+		return [SlotSet('day', None)]

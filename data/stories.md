@@ -1,6 +1,15 @@
+## start
+* start
+  - utter_ask_name
+
+## set_name
+* set_name
+  - utter_greet
+
 ## goodbye
 * goodbye
   - utter_goodbye
+  - action_restart
 
 ## thankyou
 * thankyou
@@ -17,18 +26,10 @@
 ## decry
 * decry
   - utter_sorry
-  
-## start
-* start
-  - utter_ask_name
-
-## set_name
-* set_name
-  - utter_greet
 
 ## ask_forecast_weather
 * ask_forecast_weather
-  - utter_ask_location
+  - action_weather
 
 ## set_location
 * set_location
@@ -36,12 +37,4 @@
 
 ## ask_forecast_weather+set_location
 * ask_forecast_weather+set_location
-  - action_weather
-
-## ask_forecast_weather+set_day
-* ask_forecast_weather+set_day
-  - utter_ask_location
-
-## ask_forecast_weather+set_location+set_day
-* ask_forecast_weather+set_location+set_day
   - action_weather

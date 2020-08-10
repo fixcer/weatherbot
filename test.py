@@ -28,5 +28,4 @@ def levenshtein(seq1, seq2):
 	return (int(matrix[size_x - 1, size_y - 1]))
 
 
-for i in data:
-	print(levenshtein(i.lower(), string1), i)
+print(levenshtein(string1, string2))
