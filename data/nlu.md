@@ -42,7 +42,6 @@
 - Good job
 - Thanks bot
 - Thank you so much
-- Great
 - Thanks u
 - Cảm ơn bot
 - Làm tốt lắm
@@ -204,6 +203,7 @@
 - Nhiệt độ tại [Hồ Chí Minh](location)
 - thời tiết ở [Huế](location)
 - thời tiết ở [Hạ Long](location)
+- thật ư, thời tiết [HN]{"entity": "location", "value": "H\u00e0 N\u1ed9i"} thế nào
 
 ## intent:ask_forecast_weather+set_day
 - thời tiết [hôm nay](day) thế nào
@@ -216,6 +216,8 @@
 - nhiệt độ bây giờ
 - thời tiết [hiện tại](day)
 - thời tiết [ngày mai](day)
+- thời tiết [hiện tại](day) thế nào
+- [Ngày kia](day) có mưa không
 
 ## intent:ask_forecast_weather+set_location+set_day
 - thời tiết [ngày mai](day) ở [hà nội](location) thế nào
@@ -224,6 +226,8 @@
 - thời tiết [Hà Nội](location) [ngày mai](day)
 - thời tiêt [HL]{"entity": "location", "value": "H\u1ea1 Long"} [ngày kia](day)
 - thời tiết [HN]{"entity": "location", "value": "H\u00e0 N\u1ed9i"} [4 ngày nữa](day)
+- thời tiết [Hà Nội](location) [5 ngày nữa](day)
+- [ngày mai](day) [Hạ Long](location) có mưa không
 
 ## synonym:Hà Nội
 - HN
