@@ -45,9 +45,7 @@ def getWeather(city_id):
 			for i in range(len(UV)):
 				if not i & 1:
 					tmp = description[i].text.split('.')
-					res = tmp[0] + tmp[2] + ".\n" + tmp[3] + ", nhiệt độ " + temperature[i//2][1] + "C - " + \
-                            		temperature[i//2][0] + "C.\n" + "Chỉ số UV " + \
-                    		        UV[i].text + ", độ ẩm " + humidity[i].text[5:] + "\n"
+					res = [tmp[0], tmp[2], temperature[i//2][1], temperature[i//2][0], UV[i].text, humidity[i].text[5:]]
 					details.append(res)
 
 			return details

@@ -7,11 +7,6 @@
 - Chào bạn
 - Hey bot
 - Hi bot
-- Hello
-- Hi again
-- Hi folks
-- Hi there
-- Hi guys
 - Ê
 - Mày ơi
 - Bot ơi
@@ -21,7 +16,6 @@
 - Ciao
 - xin chào
 - xin chaof
-- ok
 - hey
 
 ## intent:goodbye
@@ -46,7 +40,6 @@
 - Cảm ơn bot
 - Làm tốt lắm
 - Cảm ơn nhiều
-- Tốt lắm
 
 ## intent:praise
 - Cool
@@ -111,10 +104,6 @@
 - Bạn có biết dự báo thời tiết [ngày mai](day)?
 - Tôi có cần phải mang theo một chiếc ô?
 - Thời tiết [hôm nay](day) thế nào?
-- Trời lạnh [ngày kia](day) đến mức nào?
-- Trời nóng đến mức nào?
-- Làm thế nào có được độ ẩm [hôm nay](day)?
-- Độ ẩm [hôm nay](day) như thế nào?
 - Trời [hôm nay](day) mưa bao lâu?
 - Lượng mưa [hôm nay](day) như thế nào?
 - Thời tiết [hôm nay](day) thế nào
@@ -126,21 +115,31 @@
 - Nói cho tôi biết, thời tiết [hôm nay](day) như thế nào?
 - Thời tiết khủng khiếp
 - Thời tiết trông thế nào
-- Mức độ ẩm [ngay bây giờ](day)
-- Nhiệt độ ngoài trời
-- Nhiệt độ [hiện tại](day)
 - Thời tiết [ngày mai](day) dự kiến thế nào
 - Dự báo thời tiết [hôm nay](day) nói gì
 - Dự báo thời tiết là gì
 - Gió [hôm nay](day) thế nào
 - Gió thổi ra sao
 - Gió mạnh hay nhẹ
+- Sương mù [hôm nay](day) thế nào
+- [Ngày kia](day) có bão phải không
+
+## intent:ask_forecast_temperature
+- Trời [ngày kia](day) lạnh đến mức nào?
+- Trời nóng đến mức nào?
+- Nhiệt độ ngoài trời
+- Nhiệt độ [hiện tại](day)
 - Trời [hôm nay](day) có râm không
 - Trời [hôm nay](day) nắng to không
-- Nắng vỡ đầu
-- Sương mù [hôm nay](day) thế nào
+- nhiệt độ [hôm nay](day) thế nào
+- nhiệt độ [hôm nay](day)
+- nhiệt độ [Hạ Long](location) [ngày mai](day)
+
+## intent:ask_forecast_humidity
+- Làm thế nào có được độ ẩm [hôm nay](day)?
+- Độ ẩm [hôm nay](day) như thế nào?
+- Mức độ ẩm [ngay bây giờ](day)
 - độ ẩm [hôm nay](day) thế nào
-- [Ngày kia](day) có bão phải không
 
 ## intent:set_location
 - Ở [HN]{"entity": "location", "value": "H\u00e0 N\u1ed9i"}

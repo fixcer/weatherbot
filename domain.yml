@@ -11,7 +11,8 @@ intents:
 - set_location
 - ask_ability
 - ask_forecast_weather
-- ask_forecast_weather+set_location
+- ask_forecast_humidity
+- ask_forecast_temperature
 entities:
 - location
 - name
@@ -30,9 +31,6 @@ responses:
   - text: Bạn tên là gì?
   - text: Tên bạn là gì vậy?
   - text: Tôi gọi bạn là gì được nhỉ?
-  utter_ask_location:
-  - text: Bạn muốn hỏi ở địa điểm nào?
-  - text: Thời tiết ở đâu nhỉ?
   utter_greet:
   - text: Chào, {name}. Tôi là chatbot được thiết kế để giúp bạn xem thông tin thời
       tiết ^^
@@ -59,5 +57,6 @@ actions:
 - utter_show_ability
 - utter_fallback
 - utter_ask_name
-- utter_ask_location
 - action_weather
+- action_humidity
+- action_temperature

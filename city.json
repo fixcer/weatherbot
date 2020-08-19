@@ -68,8 +68,16 @@
    "name": "Hà Nội"
  },
  {
+   "id": "5217c2dc73b218e291cd6b14caaf944821ea545970bf0c6bc393af8b56d793bb",
+   "name": "Hanoi"
+ },
+ {
    "id": "436d983e6146bdaff7be8e4efea6f7b504c3d33c7d860765a8ca118e66279da1",
    "name": "Cần Thơ"
+ },
+{
+   "id": "70d8c3edd4a571294c56ceb4ba8611dd58512b1d5c71a6dbfe805ce70582454a",
+   "name": "Haiphong"
  },
  {
    "id": "70d8c3edd4a571294c56ceb4ba8611dd58512b1d5c71a6dbfe805ce70582454a",
